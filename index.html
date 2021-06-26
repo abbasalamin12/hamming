@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <title>Find hamming distance</title>
+</head>
+
+<body>
+  <script src="hammingFunction.js"></script>
+  <form action="">
+    <label>DNA Strand A:</label>
+    <input type="text" id="strandA" />
+    <label>DNA Strand B:</label>
+    <input type="text" id="strandB" />
+
+    <input
+      value="Calculate Hamming Distance"
+      type="button"
+      onclick="document.getElementById('answer').value=compute(strandA.value, strandB.value)"
+    />
+  </form>
+  <br />
+
+  <label>Hamming Distance is: </label>
+  <input type="text" id="answer" readonly />
+</body>
